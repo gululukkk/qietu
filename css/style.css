@@ -1,0 +1,137 @@
+/* 主体 */
+#wrap {
+	width: 1440px;
+	height: 2899px;
+	background: #242424 no-repeat;
+	margin: auto;
+	background-image: url(../images/bg.jpg);
+}
+
+
+/* 头部 */
+#header {
+	overflow: hidden;
+	margin-bottom: 36px;
+}
+
+#header .head {
+	overflow: hidden;
+	padding: 0 220px;
+	margin-top: 27px;
+	background: #040404;
+}
+
+#logo {
+	position: absolute;
+	width: 219px;
+	height: 34px;
+	margin-top: -16px;
+	background-image: url(../images/logo.png);
+}
+
+#topnav {
+	float: right;
+}
+
+#topnav .item {
+	float: left;
+}
+
+#topnav .item a {
+	color: #fff;
+	font: 12px/1em "微软雅黑";
+}
+
+/* 页面内容 */
+#page-content {
+	width: 1000px;
+	border: 1px solid #f00;
+	margin: auto;
+}
+
+#page-content .g-title {	/* for #part1 #part2 #part3 #part3d */
+	text-align: center;
+	font: 67px/1 "楷体";	
+}
+
+#page-content .g-sub-title {	/* for #part1 #part2 #part3 #part3d */
+	color: #c0a057;
+	text-align: center;
+	letter-spacing: 23px;
+	font: 47px/1 Gabriola;
+}
+
+#page-content .sepia {
+	color: #c0a057;
+}
+/* 第一部分 */
+#part1 {
+	height: 470px;
+	margin-bottom: 100px;
+}
+
+#part1 .suit {
+	position: absolute;
+}
+
+#part1 .section {
+	padding: 131px 34px 0 320px;
+	font-family: "微软雅黑";
+}
+
+#part1 .style-list {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+#part1 .style-list .item {
+	float: left;
+	width: 33%;
+}
+
+#part1 .style-list .sepia {
+	margin-right: 12px;
+	font: 20px Adobe Garamond Pro;	
+}
+
+
+#part1 .paragraph {
+	font-size: 14px;
+	line-height: 2;
+}
+
+
+/* 第二部分 */
+
+#part2 {
+	border: 1px solid #ff0;
+}
+
+#part2 .pic-play {
+	position: relative;
+	border:3px solid #c0a057;
+	background: #3f3f3f;
+}
+
+#part2 .pic-box {
+	position: relative;
+	width: 875px;
+	height: 545px;
+	margin: auto;
+}
+
+#part2 .arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -18px;
+	width: 22px;
+	height: 37px;
+	background: url(../images/arrow.png);
+}
+#part3 {
+	border: 1px solid #0ff;
+}
+
+#part3d {
+	border: 1px solid #fff;
+}
