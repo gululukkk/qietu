@@ -55,6 +55,7 @@
 }
 
 #page-content .g-sub-title {	/* for #part1 #part2 #part3 #part3d */
+	margin-bottom: 30px;
 	color: #c0a057;
 	text-align: center;
 	letter-spacing: 23px;
@@ -116,10 +117,28 @@
 #part2 .pic-box {
 	position: relative;
 	width: 875px;
-	height: 545px;
+	height: 516px;
 	margin: auto;
 }
 
+#part2 .pic-box .pic {
+	position: absolute;
+	margin-top: -12px;
+}
+
+#part2 .pic-box .numbered {
+	box-sizing:border-box;
+	position: absolute;
+	bottom: 14px;
+	left: 50%;
+	width: 69px;
+	height: 69px;
+	padding-left: 13px;
+	margin-left: -35px;
+	border-radius: 50%;
+	background: #c0a057 url(../images/numbered.png);
+	font: 45px Adobe Garamond Pro;
+}
 #part2 .arrow {
 	position: absolute;
 	top: 50%;
@@ -128,6 +147,20 @@
 	height: 37px;
 	background: url(../images/arrow.png);
 }
+
+#part2 .left-arrow {
+	left: 20px;
+}
+
+#part2 .right-arrow {
+	right: 20px;
+	transform:rotateY(180deg);
+}
+
+#part2 .dotted-list {
+	margin: ;	/* 上次写到这里了 */
+}
+/* 第三部分 */
 #part3 {
 	border: 1px solid #0ff;
 }
