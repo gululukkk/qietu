@@ -1,5 +1,4 @@
-/* 主体 */
-#wrap {
+#wrap{
 	width: 1440px;
 	height: 2899px;
 	background: #242424 no-repeat;
@@ -17,7 +16,6 @@
 #header .head {
 	overflow: hidden;
 	padding: 0 220px;
-	margin-top: 27px;
 	background: #040404;
 }
 
@@ -158,7 +156,23 @@
 }
 
 #part2 .dotted-list {
-	margin: ;	/* 上次写到这里了 */
+    position: relative;
+    top: 33px;
+	margin:auto;	/* 上次写到这里了 */
+	margin-bottom: -23px;
+    text-align:center;
+}
+
+#part2 .dotted-list .item {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    background:#5b5b5b;
+    cursor:pointer;
+}
+
+#part2 .dotted-list .item:nth-child(1) {
+    background:#c0a057;
 }
 /* 第三部分 */
 #part3 {

@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
 		#a {
+			display: inline-block;
 			width: 100px;
 			height: 100px;
 			background: #f00;
+			margin: auto;
 		}
 		
-		#b {
-			width: 100px;
-			height: 100px;
-			background: #0ff;
-		}
 	</style>
 </head>
-
 <body>
-	<div id="a"></div>
-	<div id="b"></div>
-	<button id="btn1">
-		btn1
-	</button>
-	<span></span>
-	<button id="btn2">btn2</button>
-	<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+	<span id="a">cccccccccccccc</span>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script>
-		$('span').text('123');
+		$('<style>::selection{background:#fff}</style>').appendTo(document.body);
 	</script>
 </body>
-
 </html>
