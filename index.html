@@ -6,6 +6,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -64,7 +65,7 @@
                 <ul class="clothing-style">
                     <li class="style">
                         <div class="pic-box">
-                            <img src="images/style-1.jpg" alt=""><img src="images/style-2.jpg" alt=""><img src="images/style-3.jpg" alt="">
+                            <img src="images/style-1.jpg" alt="" class="show"><img src="images/style-2.jpg" alt=""><img src="images/style-3.jpg" alt="">
                             <div class="adj">阳光雅痞</div>
                             <a class="arrow left-arrow" href="javascript:void(0)"></a>
                             <a class="arrow right-arrow" href="javascript:void(0)"></a>
@@ -77,7 +78,7 @@
                             相对于积极进取的戗驳头，成熟稳重的平驳领西装才是正式场合的上佳之选。细窄的驳领更加适合希望显得自己瘦长的男士，灰色、藏青和深蓝都是优雅正装的经典之选，再配上同色系的领导或者领结，便是默不作声，也是能让全场聚焦的精英角色。
                         </div>
                         <div class="pic-box">
-                            <img src="images/style-1.jpg" alt=""><img src="images/style-2.jpg" alt=""><img src="images/style-3.jpg" alt="">
+                            <img src="images/style-1.jpg" alt="" class="show"><img src="images/style-2.jpg" alt=""><img src="images/style-3.jpg" alt="">
                             <div class="adj">优雅正装</div>
                             <a class="arrow left-arrow" href="javascript:void(0)"  ></a>
                             <a class="arrow right-arrow" href="javascript:void(0)"  ></a>
@@ -86,7 +87,7 @@
                     </li><!--
                     --><li class="style">
                         <div class="pic-box">
-                            <img src="images/style-1.jpg" alt=""><img src="images/style-2.jpg" alt=""><img src="images/style-3.jpg" alt="">
+                            <img src="images/style-1.jpg" alt=""  class="show"><img src="images/style-2.jpg" alt=""><img src="images/style-3.jpg" alt="">
                             <div class="adj">派对王子</div>
                             <a class="arrow left-arrow" href="javascript:void(0)"  ></a>
                             <a class="arrow right-arrow" href="javascript:void(0)"  ></a>
@@ -126,16 +127,28 @@
                             	<h2 class="title">西装穿着还要注意这些：</h2>
                             	麦哥这身，袖长完全不合适。就算是没有遵循最基本的要求：露出衬衣一厘米，但是也要露出手的大部分。
                             </div>
-                            <div class="effect-stage">
-                                <div class="img-box">
-                                    <img src="images/3d-1.jpg" alt="">
-                                    <img src="images/3d-2.jpg" alt="">
-                                    <img src="images/3d-3.jpg" alt="">
-                                    <img src="images/3d-4.jpg" alt="">
-                                    <img src="images/3d-1.jpg" alt="">
-                                    <img src="images/3d-2.jpg" alt="">
-                                </div>
-                            </div>
+                            <div class = "caroursel poster-main" data-setting = '{
+	        "width":632,
+	        "height":270,
+	        "posterWidth":272,
+	        "posterHeight":357,
+	        "scale":0.8,
+	        "dealy":"2000",
+	        "algin":"middle"
+	    }'>
+	        <ul class = "poster-list">
+	            <li class = "poster-item"><img src="images/3d-1.jpg" width = "100%" height="100%"></li>
+	            <li class = "poster-item"><img src="images/3d-2.jpg" width = "100%" height="100%"></li>
+	            <li class = "poster-item"><img src="images/3d-3.jpg" width = "100%" height="100%"></li>
+	            <li class = "poster-item"><img src="images/3d-4.jpg" width = "100%" height="100%"></li>
+				<li class = "poster-item"><img src="images/3d-5.jpg" width = "100%" height="100%"></li>
+	        </ul>
+	        
+            
+	        <div class = "poster-btn poster-prev-btn"></div>
+	        <div class = "poster-btn poster-next-btn"></div>
+
+	    </div>
                         </div>
                     </div>
                 </div>
@@ -143,8 +156,8 @@
         </div>
     </div>
     <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/script.js"></script>
 	<script src="js/jquery.carousel.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

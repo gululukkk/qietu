@@ -16,9 +16,15 @@
 	<button id="btn">点击我</button>
 	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script>
-        $(btn).click(function() {
-            $('.a').fadeOut();
-        });
+        let a = {
+			a:3
+		};
+		
+		let b = {
+			b:2
+		};
+		$.extend(a,b);
+		console.log(a);
     </script>
 </body>
 </html>

@@ -64,3 +64,7 @@
 
 
 }
+
+{
+	Caroursel.init($('.caroursel'));
+}
