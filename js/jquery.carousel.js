@@ -11,6 +11,12 @@
         this.lastPosterItem = this.posterItems.last();
         this.prevBtn = this.caroursel.find(".poster-prev-btn");
         this.nextBtn = this.caroursel.find(".poster-next-btn");
+		this.index = 0;	//Me
+		this.tips = this.caroursel.siblings('.tip');
+		this.toggle_tips_display = function(index) {
+			self.tips.eq(index).stop(true).fadeIn()
+            .siblings('.tip').stop(true).fadeOut();
+		}
         //默认参数
         this.setting = {
             "width":"1000",
@@ -31,12 +37,24 @@
         //旋转
         this.rotateFlag = true;
         this.prevBtn.bind("click",function(){
+			self.index++;
+			if (self.index >= self.posterItems.length) {
+				self.index = 0;
+			}
+			console.log(self.index);
+			self.toggle_tips_display(self.index);
             if(self.rotateFlag){
                 self.rotateFlag = false;
                 self.rotateAnimate("left")
             }
         });
         this.nextBtn.bind("click",function(){
+			self.index--;
+			if (self.index < 0) {
+				self.index = self.posterItems.length - 1;
+			}
+			console.log(self.tips);
+			self.toggle_tips_display(self.index);
             if(self.rotateFlag){
                 self.rotateFlag = false;
                 self.rotateAnimate("right")
@@ -194,7 +212,7 @@
     }
     Caroursel.init = function (caroursels){
         caroursels.each(function(index,item){
-            new Caroursel($(this));
+           new Caroursel($(this));
         })  ;
     };
     window["Caroursel"] = Caroursel;

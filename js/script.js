@@ -5,7 +5,7 @@
 	var $numbered = $('#part2 .pic-box .numbered');
     $img_list.toggle_pic_display = function(numbered) {
         $(this).eq(numbered).stop(true).fadeIn()
-            .siblings('img').stop('img').stop(true).fadeOut();
+            .siblings('img').stop(true).fadeOut();
 		$numbered.text(index+1);
     }
 	$('#part2 .left-arrow').click(function() {
