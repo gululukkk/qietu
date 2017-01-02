@@ -41,7 +41,6 @@
 			if (self.index >= self.posterItems.length) {
 				self.index = 0;
 			}
-			console.log(self.index);
 			self.toggle_tips_display(self.index);
             if(self.rotateFlag){
                 self.rotateFlag = false;
@@ -53,7 +52,6 @@
 			if (self.index < 0) {
 				self.index = self.posterItems.length - 1;
 			}
-			console.log(self.tips);
 			self.toggle_tips_display(self.index);
             if(self.rotateFlag){
                 self.rotateFlag = false;
