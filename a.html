@@ -5,16 +5,20 @@
 	<title>Document</title>
 	<style>
 		.a {
-			width: 33%;
+			width: 100px;
+			height: 200px;
 			background: #f00;
-			height: 100px;
 		}
 	</style>
 </head>
 <body>
-	<div style="display:inline-block;vertical-align:middle;">
-		<div style="width:50px">fsf</div>
-		<div class="a">afdsfsdf</div>
-	</div>
+	<div class="a"></div>
+	<button id="btn">点击我</button>
+	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(btn).click(function() {
+            $('.a').fadeOut();
+        });
+    </script>
 </body>
 </html>

@@ -253,5 +253,51 @@
 /* 3d轮播 */
 #part3d {
     margin: 125px 0 0 0;
-	border: 1px solid #fff;
+}
+
+#part3d .pic-play-3d {
+    height: 364px;
+}
+
+#part3d .pic-play-3d .play-bg {
+    position: relative;
+    height: 227px;
+    border: 2px solid #c0a057;
+    background:#3f3f3f;
+}
+
+#part3d .play-bg .tip {
+    display: none;
+    box-sizing:border-box;
+    position: absolute;
+    right:0;
+    padding:20px;
+    width: 358px;
+    height: 226px;
+    font: 14px/2.2 "微软雅黑";
+}
+
+#part3d .play-bg .tip:nth-child(1) {
+    display: block;
+}
+#part3d .tip .title {
+    width: 80%;
+    margin:0 0 20px;
+    border-bottom:1px solid #535353;
+    font: 20px/2.2 "adobe 黑体 Std";
+}
+
+
+#part3d .effect-stage {
+    width: 632px;
+    border: 1px solid red;
+}
+
+#part3d .effect-stage .img-box {
+    position: relative;
+}
+
+#part3d .img-box img {
+    position: absolute;
+    border: 3px solid #c0a057;
 }
