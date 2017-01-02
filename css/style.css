@@ -47,6 +47,17 @@
 	margin: auto;
 }
 
+#page-content .numbered {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #c0a057;
+    color: rgb(255, 255, 255);
+    font: 21px/1.1 Adobe Garamond Pro;
+    letter-spacing:normal;
+}
+
 #page-content .g-title {	/* for #part1 #part2 #part3 #part3d */
 	text-align: center;
 	font: 67px/1 "楷体";	
@@ -176,9 +187,71 @@
 }
 /* 第三部分 */
 #part3 {
-	border: 1px solid #0ff;
+    margin-top: 116px;
 }
 
+#part3 .clothing-style .style {
+    display: inline-block;
+    width: 329px;
+    border: 1px solid #505050;
+    vertical-align:top;
+}
+
+#part3 .clothing-style .pic-box {
+    position: relative;
+    height: 482px;
+    border: 2px solid #c0a057;
+}
+#part3 .clothing-style img {
+    position: absolute;
+}
+
+#part3 .pic-box .arrow {
+    position: absolute;
+    top: 147px;
+    width: 16px;
+    height: 31px;
+    background: url(../images/style-arrow.png);
+}
+
+#part3 .pic-box .left-arrow {
+    left: 14px;
+}
+
+#part3 .pic-box .right-arrow {
+    right: 14px;
+    transform:rotateY(180deg);
+}
+
+#part3 .clothing-style .style:nth-child(2) {
+    margin: 0px 2px;
+}
+
+#part3 .clothing-style .adj {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    background: #000;
+    font: 24px/1.6 "Adobe 黑体 Std";
+    text-align: center;
+    opacity: 0.7;
+}
+#part3 .clothing-style .intro {
+    box-sizing:border-box;
+    width: 100%;
+    padding: 5px 6px;
+    font: 14px/2 "微软雅黑";
+}
+
+#part3 .look {
+    margin-bottom: -72px;
+    color: rgb(192, 160, 87);
+    font: 24px/3 Adobe Garamond Pro;
+    letter-spacing:12px;
+    text-align: center;
+}
+/* 3d轮播 */
 #part3d {
+    margin: 125px 0 0 0;
 	border: 1px solid #fff;
 }
