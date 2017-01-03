@@ -9,6 +9,7 @@
         this.posterItems = caroursel.find(".poster-item");
         this.firstPosterItem = this.posterItems.first();
         this.lastPosterItem = this.posterItems.last();
+		this.img_list = this.posterItems.find('img');
         this.prevBtn = this.caroursel.find(".poster-prev-btn");
         this.nextBtn = this.caroursel.find(".poster-next-btn");
 		this.index = 0;	//Me
@@ -42,6 +43,9 @@
 				self.index = 0;
 			}
 			self.toggle_tips_display(self.index);
+			console.log(self.img_list);
+			self.img_list.css('border','none');
+			self.img_list.eq(self.index).css('border','1px solid red');
             if(self.rotateFlag){
                 self.rotateFlag = false;
                 self.rotateAnimate("left")
@@ -53,6 +57,8 @@
 				self.index = self.posterItems.length - 1;
 			}
 			self.toggle_tips_display(self.index);
+			self.img_list.css('border','none');
+			self.img_list.eq(self.index).css('border','1px solid red');
             if(self.rotateFlag){
                 self.rotateFlag = false;
                 self.rotateAnimate("right")

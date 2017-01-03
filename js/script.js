@@ -48,7 +48,6 @@
             index = 0;
         }
         toggle_pic_display.call($img_list,index);
-        
     });
     $('#part3 .right-arrow').click(function() {
         let $img_list = $(this).siblings('img');
@@ -57,9 +56,8 @@
         if ( index < 0) {
             index = $img_list.length - 1;
         }
-		console.log(index);
+		
         toggle_pic_display.call($img_list,index);
-        
     });
 }
 
