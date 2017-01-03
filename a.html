@@ -8,23 +8,25 @@
 			width: 100px;
 			height: 200px;
 			background: #f00;
+			opacity: 0.5;
+		}
+		
+		.b {
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			background:#300;
 		}
 	</style>
 </head>
 <body>
-	<div class="a"></div>
+	<div class="a">
+		<div class="b"></div>
+	</div>
 	<button id="btn">点击我</button>
 	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script>
-        let a = {
-			a:3
-		};
-		
-		let b = {
-			b:2
-		};
-		$.extend(a,b);
-		console.log(a);
+       
     </script>
 </body>
 </html>

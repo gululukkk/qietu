@@ -15,7 +15,7 @@
 
 #header .head {
 	overflow: hidden;
-	padding: 0 220px;
+	padding: 17px 220px 0;
 	background: #040404;
 }
 
@@ -43,7 +43,6 @@
 /* 页面内容 */
 #page-content {
 	width: 1000px;
-	border: 1px solid #f00;
 	margin: auto;
 }
 
@@ -52,9 +51,10 @@
     height: 20px;
     display: inline-block;
     border-radius: 50%;
+	margin-right: 15px;
     background: #c0a057;
     color: rgb(255, 255, 255);
-    font: 21px/1.1 Adobe Garamond Pro;
+    font: 21px/0.9 Adobe Garamond Pro;
     letter-spacing:normal;
 }
 
@@ -287,6 +287,9 @@
     font: 20px/2.2 "adobe 黑体 Std";
 }
 
+#part3d .g-sub-title {
+	margin-bottom: 66px;
+}
 
 #part3d .effect-stage {
     width: 632px;

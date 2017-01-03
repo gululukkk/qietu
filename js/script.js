@@ -4,8 +4,8 @@
 	var fina_pic_index = $img_list.length - 1;
 	var $numbered = $('#part2 .pic-box .numbered');
     $img_list.toggle_pic_display = function(numbered) {
-        $(this).eq(numbered).stop(true).fadeIn()
-            .siblings('img').stop(true).fadeOut();
+        $(this).eq(numbered).addClass('show').stop(true).fadeIn()
+            .siblings('img').removeClass('show').stop(true).fadeOut();
 		$numbered.text(index+1);
     }
 	$('#part2 .left-arrow').click(function() {
@@ -40,29 +40,27 @@
 })();
 
 {
-    let index = 0;
     $('#part3 .left-arrow').click(function() {
         let $img_list = $(this).siblings('img');
+		let index = $(this).siblings('img.show').index();
         index++;
         if ( index >= $img_list.length) {
             index = 0;
         }
-        
         toggle_pic_display.call($img_list,index);
         
     });
     $('#part3 .right-arrow').click(function() {
         let $img_list = $(this).siblings('img');
-        index--
+		let index = $(this).siblings('img.show').index();
+        index--;
         if ( index < 0) {
             index = $img_list.length - 1;
         }
-        
+		console.log(index);
         toggle_pic_display.call($img_list,index);
         
     });
-
-
 }
 
 {
