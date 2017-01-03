@@ -43,9 +43,13 @@
 				self.index = 0;
 			}
 			self.toggle_tips_display(self.index);
-			console.log(self.img_list);
-			self.img_list.css('border','none');
-			self.img_list.eq(self.index).css('border','1px solid red');
+					
+			self.posterItems.each(function(i,elem) {
+				$(elem).css('border','none');
+				if ($(elem).css('z-index') === '2') {
+					$(elem).css('border','2px solid #c0a057');
+				}
+			});
             if(self.rotateFlag){
                 self.rotateFlag = false;
                 self.rotateAnimate("left")
@@ -57,8 +61,14 @@
 				self.index = self.posterItems.length - 1;
 			}
 			self.toggle_tips_display(self.index);
-			self.img_list.css('border','none');
-			self.img_list.eq(self.index).css('border','1px solid red');
+			
+			self.posterItems.each(function(i,elem) {
+				$(elem).css('border','none');
+				if ($(elem).css('z-index') === '2') {
+					$(elem).css('border','2px solid #c0a057');
+				}
+			});
+			
             if(self.rotateFlag){
                 self.rotateFlag = false;
                 self.rotateAnimate("right")
